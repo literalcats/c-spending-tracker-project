@@ -1,0 +1,19 @@
+{
+  "name": "carl-ianne-spending-tracker",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline-first student allowance and spending tracker (PWA, IndexedDB).",
+  "scripts": {
+    "start": "node e2e/server.mjs",
+    "lint": "eslint .",
+    "test": "node tests/run.mjs",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@playwright/test": "^1.49.0",
+    "eslint": "^9.0.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Carl Ianne's Spending Tracker</title>
+  <meta name="description" content="Plan your allowance, track spending, and stay within budget. Works offline.">
+  <meta name="theme-color" content="#1b1e1c">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Spending">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- The whole app shell. Screens are drawn into <main id="view"> by js/main.js -->
+  <div class="shell">
+    <header class="topbar">
+      <h1>Carl Ianne's Spending Tracker</h1>
+      <div class="top-actions">
+        <button class="btn primary install-btn" data-click="install">Install app</button>
+        <button id="themeBtn" class="icon-btn" data-click="toggle-theme" aria-label="Switch theme"></button>
+      </div>
+    </header>
+    <nav id="nav" class="nav" aria-label="Main"></nav>
+    <main id="view" class="view"><p class="muted">Loading…</p></main>
+  </div>
+
+  <button class="fab" data-click="add-tx" aria-label="Add record">+</button>
+  <dialog id="txDialog" aria-label="Add record"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
