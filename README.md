@@ -1,5 +1,7 @@
 https://cianne-spending-tracker-app101.vercel.app/#/dashboard
-Written with Claude (Anthropic); Carl Ianne directed the design and testing. See docs/GUIDE.
+> **AI disclosure:** Written with Claude (Anthropic). Carl Ianne directed the design,
+> made the decisions, and tested the result. See [docs/GUIDE.md](docs/GUIDE.md)
+> for how it was built and what has and has not been tested.
 # Carl Ianne's Spending Tracker
 
 A student allowance and spending tracker. It runs **100% in the browser**: no server, no account.
